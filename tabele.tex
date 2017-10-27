@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+%%\usepackage[MeX]{polski}
+%%\usepackage[cp1250]{inputenc}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{hyperref}
+\usepackage{makeidx}
+\usepackage[tableposition=top]{caption}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\usepackage[table]{xcolor}
+\begin{document}
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{No, of visual words}& \multicolumn{6}{c|}{Dataset} \\ \cline{2-7}
+&1&2&3&4&5&6 \\ \hline
+50&61.27\%&88.92\%&77.88\%&87.89\%&92.04\%&96.65\% \\
+\hline
+		\end{tabular}
+	\caption{Final classification results for datasets 1-3 using Euclidean normalization}
+	\label{tab:dane}
+\end{table}
+\begin{table}
+\centering
+\caption{Bramka AND}
+\begin{tabular}{c|c|c}
+\hline
+\hline
+$x_1$&$x_2$&($x_1$AND$x_2$) \\ \hline
+1&1&1 \\ 
+1&0&0 \\ 
+0&1&0 \\ 
+0&0&0 \\ \hline
+\hline
+\end{tabular}
+\end{table}
+\begin{tabular}{|r|l|}
+\hline
+7C0&hexadecimal \\
+3700&octal \\ \cline {2-2}
+11111000000& binary \\
+\hline \hline
+1984&decimal \\
+\hline
+\end{tabular}
+\begin{table}
+\centering
+\rowcolors{1}{green}{pink}
+\begin{tabular}{ccc}
+xxx&xxx&333 \\
+xxx&xzx&fdf \\
+yyy&zzz&gdf \\
+yyy&zzz&dgd \\
+\end{tabular}
+\end{table}
+\begin{table}
+\centering
+\caption{Scalone wiersze i kolumny.}
+\begin{tabular}{|c|c|c|c|c|c|c}
+\cline{3-6}
+& & \multicolumn{4}{c|}{Primes} \\ \cline{3-6}
+& & 2&3&5&7 \\ \cline{1-6}
+\multirow{2}{*}{Powers}
+&504&3&2&0&1 \\ \cline{2-6}
+&540&2&3&1&0 \\ \cline{1-6}
+\multirow{2}{*}{Powers}
+&gcd&2&2&0&0&min \\ \cline{2-6}
+&lcm&3&3&1&1&max \\ \cline{1-6}
+\end{tabular}
+\end{table}
+\end{document}
